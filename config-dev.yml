@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri:  
+          search-paths: git@github.com:renbingbing/springcloud-config.git
+            - springcloud-config
+      label: master
